@@ -1,0 +1,49 @@
+{
+    "name": "detoxigram",
+    "version": "1.0.0",
+    "private": true,
+    "description": "Are you aware of how toxic is the content you consume?",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/LIA-DiTella/Landing-Detoxigram"
+    },
+    "keywords": [
+        "next",
+        "nextjs",
+        "react",
+        "reactjs",
+        "npx",
+        "tailwindcss",
+        "tailwind"
+    ],
+    "author": "Luz Alba Posse",
+    "homepage": "https://luzalbaposse.github.io/",
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "@changesets/cli": "^2.27.1",
+        "next": "^14.2.3",
+        "react": "^18",
+        "react-dom": "^18"
+    },
+    "devDependencies": {
+        "@tailwindcss/typography": "^0.5.10",
+        "@types/node": "^20",
+        "@types/react": "^18",
+        "@types/react-dom": "^18",
+        "autoprefixer": "^10.0.1",
+        "clsx": "^1.2.1",
+        "eslint": "^8",
+        "eslint-config-next": "14.0.4",
+        "postcss": "^8",
+        "prettier": "^2.8.6",
+        "sass": "^1.57.1",
+        "tailwindcss": "^3.3.0",
+        "typescript": "^5",
+        "vitest": "^0.27.1"
+    }
+}
