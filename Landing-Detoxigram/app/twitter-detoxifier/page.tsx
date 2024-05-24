@@ -1,5 +1,7 @@
-import { Button } from "@/components/global/button";
+'use client'
 import Link from "next/link";
+import ToxicityPredictionForm from "@/components/global/toxicity_form";
+import { useState } from "react";
 
 export default function Home() {
     return (
@@ -13,16 +15,8 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                
-                <div className="col-span-6">
-                <h2 className="w-full text-xl text-center">Enter your twitter username, and we will analyze the toxicity</h2>
-                </div>
-                <div className="col-span-6"> 
-                <input type="text" className="w-2/4 p-4 text-lg text-center bg-neutral-300/20 rounded-lg" placeholder="Enter your twitter username" />
-                </div>
-                <div className="col-span-6">
-                    <Button className="bg-red-600">Analyze</Button>
-                </div>
+                <ToxicityPredictionForm/>
+
 
             </div>
         </section>

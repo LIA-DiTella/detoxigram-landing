@@ -1,12 +1,12 @@
 'use client'
 import React, { useState } from 'react';
+import { Button } from "./button";
 
 const ToxicityPredictionForm = () => {
-    const [message, setMessage] = useState('');
-    const [prediction, setPrediction] = useState({ isToxic: false, toxicityScore: null });
-
+    const [username, setUsername] = useState('');
+    const [prediction, setPrediction] = useState({ total_toxicity : null, most_toxic_message: null, why_toxicity: null, detoxified_most_toxic: null});
     const handleInputChange = (event) => {
-        setMessage(event.target.value);
+        setUsername(event.target.value);
     };
 
     const predictToxicity = async () => {
@@ -16,41 +16,44 @@ const ToxicityPredictionForm = () => {
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ message: message })
+                body: JSON.stringify({ username: username }) 
             });
-
+    
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
-
+    
             const data = await response.json();
             console.log(data);
             setPrediction(data);
-            console.log(data.is_toxic); 
-            console.log(data.toxicity_score);
         } catch (error) {
-            console.error('Error predicting toxicity:', error);
+            console.error('Error:', error);
         }
     };
 
     return (
-        <div style={{ backgroundColor: '#ffffff', padding: '20px', borderRadius: '10px' }}>
-            <h1 style={{ color: '#000000' }}>Toxicity Prediction</h1>
-            <label htmlFor="message" style={{ color: '#000000' }}>Enter your message:</label><br />
-            <textarea style={{ color: '#000000' }} id="message" name="message" rows="4" cols="50" value={message} onChange={handleInputChange}></textarea><br />
-            <button className="bg-red-600 text-white px-6 py-4 rounded-lg text-sm font-semibold flex items-center hover:bg-red-700 transition-colors whitespace-nowrap" onClick={predictToxicity}>Predict Toxicity</button>
-            <div>
-                {prediction.toxicityScore !== null && (
-                    <div>
-                        <p style={{ color: '#000000' }}>
-                            {prediction.isToxic ?  'The message is not toxic.' : 'The message is toxic.'}
-                        </p>
-                        <p style={{ color: '#000000' }}>
-                            {`The message score is: ${prediction.toxicity_score}.`}
-                        </p>
-
-                    </div>
-                )}
+        <div className="col-span-6">
+            <div className="flex flex-wrap gap-4 items-center content-start relative p-8 sm:p-12 border aspect-video md:aspect-[3/1] border-neutral-400/30 rounded-xl shadow-sm overflow-hidden justify-center">
+                <h2 className="w-full text-xl text-center">Enter a twitter username, we'll analyze how toxic is the content it produces</h2>
+                <input type="text" className="w-2/4 p-4 text-lg text-center bg-neutral-300/20 rounded-lg" placeholder="Enter your twitter username" value={username} onChange={handleInputChange} />
+                <div className="col-span-6">
+                    <Button className="bg-red-600 hover:bg-red-700" onClick={predictToxicity}>Analyze</Button>
+                </div>
+                <div>
+                    {prediction.total_toxicity !== null && (
+                        <div>
+                            <p style={{ color: '#000000' }}>
+                                <p>{prediction.total_toxicity}</p>
+                                <p>{prediction.most_toxic_message}</p>
+                                <p>{prediction.why_toxicity}</p>
+                                <p>{prediction.detoxified_most_toxic}</p>
+                            </p>
+                            <p style={{ color: '#000000' }}>
+                                {`The message score is: ${prediction.toxicity_score}.`}
+                            </p>
+                        </div>
+                    )}
+                </div>
             </div>
         </div>
     );

@@ -88,7 +88,7 @@ def explain_toxicity(messages, toxicity) -> str:
 
 
 @router.post("/predict", response_model=PredictionResponse)
-def predict(request: PredictionRequest()):
+def predict(request: PredictionRequest):
     '''
     predict() takes an username from the request and returns the total toxicity of the user's tweets
     '''
