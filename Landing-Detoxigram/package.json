@@ -26,6 +26,7 @@
     },
     "dependencies": {
         "@changesets/cli": "^2.27.1",
+        "framer-motion": "^11.2.6",
         "next": "^14.2.3",
         "react": "^18",
         "react-dom": "^18"
