@@ -1,5 +1,7 @@
 import { Button } from "@/components/global/button";
 import Link from "next/link";
+import { motion } from "framer-motion";
+
 
 export default function Home() {
     return (
@@ -27,7 +29,7 @@ Subsequently, we conducted an online survey with 300 Americans of varying ages, 
 <h2 className="w-full text-2xl text-left mt-5 mb-5 text-bold">Online toxicity as a Non-Binary Element</h2>
                     <p className="w-full text-xl text-left mt-5 mb-5">An observation that we took from the literature is that polarizing or toxic content has different attributes that we believe are key to understanding unhealthy online conversations (Price et al., 2020).<br /><br />
 
-We believe that both detecting and communicating these attributes is a key component of a toxicity classifier. For these tasks we used the UCC dataset, a rich and annotated set of online comments.
+We believe that both detecting and communicating these attributes is a key component of a toxicity classifier. For these tasks we used the <a href="https://github.com/conversationai/unhealthy-conversations" className="underline">UCC dataset</a>, a rich and annotated set of online comments.
 </p>
 <h2 className="w-full text-2xl text-left mt-5 mb-5 text-bold">How to communicate it</h2>
                     <p className="w-full text-xl text-left mt-5 mb-5">As far as we know, there are no other toxicity classifiers that combine accurate and nuanced metrics with tailored and persuasive explanations of their classifications. Moreover, they do not showcase to the user healthier alternatives of communication.</p>
@@ -45,7 +47,7 @@ We concluded that leveraging these two classification tools can yield great resu
                     <div className="bg-[url('/build.png')] bg-cover bg-center bg-no-repeat flex h-auto gap-4 content-start relative p-8 sm:p-12 border border-neutral-400/30 rounded-xl shadow-sm justify-center">
                     <h2 className="w-full text-4xl text-center mb-0">What have we built?</h2>
                     </div>
-                    <div className="w-full text-xl text-left mt-5 mb-5">We have built Detoxigram, a tool that analyzes toxicity in text channels, explains its decisions and detoxifies messages with the goal of reducing negative interactions and promoting constructive dialogue. <br /><br />
+                    <div className="w-full text-xl text-left mt-5 mb-5">We have built <a href="https://t.me/DetoxigramBot" className="text-red-600 font-bold underline">Detoxigram</a>, a tool that analyzes toxicity in text channels, explains its decisions and detoxifies messages with the goal of reducing negative interactions and promoting constructive dialogue. <br /><br />
 
 In order to achieve this, we proposed a toxicity-detection pipeline that combines generative LLMs and BERT to exploit their strengths efficiently.<br /><br />
 
@@ -110,15 +112,15 @@ Developed with open source technology, Detoxigram doesn’t have third parties d
                     </div>
                 </div>
                 <div id="#Referencias">
-                    <div className="flex h-auto gap-4 content-start relative p-8 sm:p-12 border border-neutral-400/30 rounded-xl shadow-sm justify-center">
+                    <div className="bg-[url('/referencias.png')] bg-cover bg-center bg-no-repeat flex h-auto gap-4 content-start relative p-8 sm:p-12 border border-neutral-400/30 rounded-xl shadow-sm justify-center">
                     <h2 className="w-full text-4xl text-center mb-0">References</h2>
                     </div>                    
                     <div className="w-full text-lg leading-relaxed mt-5 mb-5">
     <ol className="list-disc list-inside">
-        <li className="mt-4 mb-4">Nedjma Ousidhoum, Xinran Zhao, Tianqing Fang, Yangqiu Song, and Dit-Yan Yeung. 2021. Probing Toxic Content in Large Pre-Trained Language Models. In Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers), pages 4262–4274, Online. Association for Computational Linguistics.</li>
-        <li className="mt-4 mb-4">Paula Fortuna, Juan Soler-Company, Leo Wanner. How well do hate speech, toxicity, abusive and offensive language classification models generalize across datasets? 2021. Information Processing & Management, Volume 58, Issue 3, ISSN 0306-4573.</li>
-        <li className="mt-4 mb-4">Ilan Price, Jordan Gifford-Moore, Jory Flemming, Saul Musker, Maayan Roichman, Guillaume Sylvain, Nithum Thain, Lucas Dixon, and Jeffrey Sorensen. 2020. Six Attributes of Unhealthy Conversations. In Proceedings of the Fourth Workshop on Online Abuse and Harms, pages 114–124, Online. Association for Computational Linguistics.</li>
-        <li className="mt-4 mb-4">Zhixue Zhao, Ziqi Zhang, and Frank Hopfgartner. 2021. A Comparative Study of Using Pre-trained Language Models for Toxic Comment Classification. In Companion Proceedings of the Web Conference 2021.</li>
+        <li className="mt-4 mb-4">Nedjma Ousidhoum, Xinran Zhao, Tianqing Fang, Yangqiu Song, and Dit-Yan Yeung. 2021. <a href="https://aclanthology.org/2021.acl-long.329" className="underline">Probing Toxic Content in Large Pre-Trained Language Models.</a> In Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers), pages 4262–4274, Online. Association for Computational Linguistics.</li>
+        <li className="mt-4 mb-4">Paula Fortuna, Juan Soler-Company, Leo Wanner. <a href="https://doi.org/10.1016/j.ipm.2021.102524" className="underline">How well do hate speech, toxicity, abusive and offensive language classification models generalize across datasets?</a> 2021. Information Processing & Management, Volume 58, Issue 3, ISSN 0306-4573.</li>
+        <li className="mt-4 mb-4">Ilan Price, Jordan Gifford-Moore, Jory Flemming, Saul Musker, Maayan Roichman, Guillaume Sylvain, Nithum Thain, Lucas Dixon, and Jeffrey Sorensen. 2020. <a href="https://aclanthology.org/2020.alw-1.15" className="underline">Six Attributes of Unhealthy Conversations. In Proceedings of the Fourth Workshop on Online Abuse and Harms</a>, pages 114–124, Online. Association for Computational Linguistics.</li>
+        <li className="mt-4 mb-4">Zhixue Zhao, Ziqi Zhang, and Frank Hopfgartner. 2021. <a href="https://eprints.whiterose.ac.uk/173371/1/A_Comparative_Study_of_Using_Pre_trained_Language_Models_forToxic_Comment_Classification.pdf" className="underline">A Comparative Study of Using Pre-trained Language Models for Toxic Comment Classification.</a> In Companion Proceedings of the Web Conference 2021.</li>
     </ol>
 </div>
                     </div>
