@@ -9,7 +9,7 @@ export default function Home() {
         show: {
           opacity: 1,
           transition: {
-            duration: 0.5
+            duration: 1
           }
         }
       };
@@ -120,9 +120,9 @@ export default function Home() {
                   <motion.div initial="hidden" animate="show" variants={variants} className="col-span-6">
                     <div className="flex flex-wrap gap-4 content-start bg-neutral-300/20 relative p-8 sm:p-12 border aspect-video md:aspect-[3/1] border-neutral-400/30 rounded-xl shadow-sm overflow-hidden">
                         <div className="image-container absolute flex flex-row w-full h-full inset-y-0 bottom-0 items-center justify-center space-x-10 right-0 flex-1 bg-[url('/bg-applications.png')] bg-cover bg-center bg-no-repeat">
-                        <a href="#"><img src="/chrome.png" alt="Alt text" className="w-auto h-1/6 aspect-auto"/></a>
-                        <a href="https://t.me/DetoxigramBot"><img src="/telegram.png" alt="Alt text" className="w-auto h-3/6 aspect-auto" /></a>
-                        <a href="/twitter-detoxifier"><img src="/twitter.png" alt="Alt text" className="w-auto h-3/6 aspect-auto" /></a>
+                        <a href="#"><img src="/chrome.png" alt="chrome" className="h-1/2 aspect-auto"/></a>
+                        <a href="https://t.me/DetoxigramBot"><img src="/telegram.png" alt="telegram" className="h-1/2 aspect-auto" /></a>
+                        <a href="/twitter-detoxifier"><img src="/twitter.png" alt="twitter" className="h-1/2 aspect-auto" /></a>
                         
                         </div>
                     </div>
