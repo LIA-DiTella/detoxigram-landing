@@ -32,7 +32,7 @@ We believe that both detecting and communicating these attributes is a key compo
 <h2 className="w-full text-2xl text-left mt-5 mb-5 text-bold">How to communicate it</h2>
                     <p className="w-full text-xl text-left mt-5 mb-5">As far as we know, there are no other toxicity classifiers that combine accurate and nuanced metrics with tailored and persuasive explanations of their classifications. Moreover, they do not showcase to the user healthier alternatives of communication.</p>
                     </div>
-                    <h2 className="w-full text-3xl text-left mt-5 mb-5">What we learned about Toxicity</h2>
+                    <h2 className="w-full text-3xl text-left mt-5 mb-5">What we learned about the technology</h2>
                     <p className="w-full text-xl text-left mt-5 mb-5">In our literature overview of existing toxicity detection models, we came to the conclusion that there are different technologies that have proven accurate for the task. The two main ones are outlined below.<br /><br />
 
 When prompted effectively, generative LLMs are accurate classifiers for nuanced language tasks and can generate persuasive messages. However, they can be quite expensive, slow and can generate hallucinations. <br /><br />
