@@ -15,7 +15,7 @@ export default function Home() {
                 
                 <div className="col-span-6 mt-10">
                     <div id="#Build">
-                    <div className="flex h-auto gap-4 content-start relative p-8 sm:p-12 border border-neutral-400/30 rounded-xl shadow-sm justify-center">
+                    <div className="bg-[url('/learned.png')] bg-cover bg-center bg-no-repeat flex h-auto gap-4 content-start relative p-8 sm:p-12 border border-neutral-400/30 rounded-xl shadow-sm justify-center">
                     <h2 className="w-full text-4xl text-center mb-0">What have we learned?</h2>
                     </div>
                     <h2 className="w-full text-3xl text-left mt-5 mb-5">What we learned about Toxicity</h2>
@@ -42,7 +42,7 @@ On the other hand, BERT models are often cheap to train and deploy and accurate,
 We concluded that leveraging these two classification tools can yield great results. We propose a classification pipeline that  integrates these classifiers with the Telegram API to develop agents that interact smoothly with users. This setup makes it easy to fetch messages from public Telegram channels while preserving user privacy, as we do not know who sent the messages.<br /><br />
 </p>
                     <div id="#Lessons">
-                    <div className="flex h-auto gap-4 content-start relative p-8 sm:p-12 border border-neutral-400/30 rounded-xl shadow-sm justify-center">
+                    <div className="bg-[url('/build.png')] bg-cover bg-center bg-no-repeat flex h-auto gap-4 content-start relative p-8 sm:p-12 border border-neutral-400/30 rounded-xl shadow-sm justify-center">
                     <h2 className="w-full text-4xl text-center mb-0">What have we built?</h2>
                     </div>
                     <div className="w-full text-xl text-left mt-5 mb-5">We have built Detoxigram, a tool that analyzes toxicity in text channels, explains its decisions and detoxifies messages with the goal of reducing negative interactions and promoting constructive dialogue. <br /><br />
@@ -74,7 +74,7 @@ We then take the 10 most toxic messages from the previous step and we again clas
 Finally we prompt the generative LLM to produce a short text explaining the classification of the Telegram channel, and we use the second BERT-based classifier to detect the toxicity attributes of the channel.<br /><br />
 </div>
 <h2 className="w-full text-2xl text-left mt-5 mb-5 font-bold">Main advantages of Detoxigram</h2>
-<p className="w-full text-xl text-left mt-5 mb-5"><div className="underline mb-2">Tailored and persuasive explanation</div>
+<div className="w-full text-xl text-left mt-5 mb-5"><div className="underline mb-2">Tailored and persuasive explanation</div>
 Detoxigram is able to provide an explanation of why the channel was classified with a certain level of toxicity, a summary of the main topics discussed in the channel, and a brief overview of the potential consequences for the user engaging with such content.<br /><br />
 <div className="underline mt-1 mb-2">Costs</div>
 By using a BERT classifier to reduce the number of messages classified by our generative LLM, we reduce in 5 the amount of calls done to the API of the chosen LLM. We calculated these values and concluded that the price of analyzing a channel using our pipeline is, on average, $0.0017 USD.<br /><br />
@@ -89,12 +89,12 @@ Toxicity Dimensions are shown with an image that is coordinated with the color c
 <div className="underline mt-1 mb-2">Open Source</div>
 
 Developed with open source technology, Detoxigram doesn’t have third parties dependency and provides greater modular flexibility for further developments and updates. <br /><br />
-</p>
+</div>
 
 
                     </div>
                     <div id="#Future">
-                    <div className="flex h-auto gap-4 content-start relative p-8 sm:p-12 border border-neutral-400/30 rounded-xl shadow-sm justify-center">
+                    <div className="bg-[url('/future.png')] bg-cover bg-center bg-no-repeat flex h-auto gap-4 content-start relative p-8 sm:p-12 border border-neutral-400/30 rounded-xl shadow-sm justify-center">
                     <h2 className="w-full text-4xl text-center mb-0">What are our plans for the future?</h2>
                     </div>                                  
                     <div className="w-full text-xl text-left mt-5 mb-5">
