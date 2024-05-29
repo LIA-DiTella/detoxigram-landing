@@ -20,22 +20,22 @@ export default function Home() {
                     <div className="bg-[url('/learned.png')] bg-cover bg-center bg-no-repeat flex h-auto gap-4 content-start relative p-8 sm:p-12 border border-neutral-400/30 rounded-xl shadow-sm justify-center">
                     <h2 className="w-full text-4xl text-center mb-0">What have we learned?</h2>
                     </div>
-                    <h2 className="w-full text-3xl text-left mt-5 mb-5">What we learned about Toxicity</h2>
-                    <h2 className="w-full text-2xl text-left mt-5 mb-5 text-bold">How to define it</h2>
-                    <p className="w-full text-xl text-left mt-5 mb-5">After conducting a literature review on how to define toxicity (Zhixue et al., 2021; Ousidhoum et al., 2021; Fortuna et al., 2021), we realized the importance of (A) approximating our target audience's criteria regarding what is and is not perceived as toxic, and (B) using real messages from Telegram for that test.<br /><br />
+                    <h2 className="w-full text-3xl text-justify mt-5 mb-5">What we learned about Toxicity</h2>
+                    <h2 className="w-full text-2xl text-justify mt-5 mb-5 text-bold">How to define it</h2>
+                    <p className="w-full text-xl text-justify mt-5 mb-5">After conducting a literature review on how to define toxicity (Zhixue et al., 2021; Ousidhoum et al., 2021; Fortuna et al., 2021), we realized the importance of (A) approximating our target audience's criteria regarding what is and is not perceived as toxic, and (B) using real messages from Telegram for that test.<br /><br />
 Based on the guidelines found in the literature, we crafted a Likert scale with five levels, ranging from Non-Toxic to Extremely Toxic, and scraped Telegram channels to extract messages relevant to our study.<br /><br />
-Subsequently, we conducted an online survey with 300 Americans of varying ages, genders, ethnicities, and political affiliations and used the survey results as ground truth for our classifier.
+Subsequently, we conducted an <a href="/survey" className="underline">online survey with 300 Americans</a> of varying ages, genders, ethnicities, and political affiliations and used the survey results as ground truth for our classifier.
 </p>
-<h2 className="w-full text-2xl text-left mt-5 mb-5 text-bold">Online toxicity as a Non-Binary Element</h2>
-                    <p className="w-full text-xl text-left mt-5 mb-5">An observation that we took from the literature is that polarizing or toxic content has different attributes that we believe are key to understanding unhealthy online conversations (Price et al., 2020).<br /><br />
+<h2 className="w-full text-2xl text-justify mt-5 mb-5 text-bold">Online toxicity as a Non-Binary Element</h2>
+                    <p className="w-full text-xl text-justify mt-5 mb-5">An observation that we took from the literature is that polarizing or toxic content has different attributes that we believe are key to understanding unhealthy online conversations (Price et al., 2020).<br /><br />
 
 We believe that both detecting and communicating these attributes is a key component of a toxicity classifier. For these tasks we used the <a href="https://github.com/conversationai/unhealthy-conversations" className="underline">UCC dataset</a>, a rich and annotated set of online comments.
 </p>
-<h2 className="w-full text-2xl text-left mt-5 mb-5 text-bold">How to communicate it</h2>
-                    <p className="w-full text-xl text-left mt-5 mb-5">As far as we know, there are no other toxicity classifiers that combine accurate and nuanced metrics with tailored and persuasive explanations of their classifications. Moreover, they do not showcase to the user healthier alternatives of communication.</p>
+<h2 className="w-full text-2xl text-justify mt-5 mb-5 text-bold">How to communicate it</h2>
+                    <p className="w-full text-xl text-justify mt-5 mb-5">As far as we know, there are no other toxicity classifiers that combine accurate and nuanced metrics with tailored and persuasive explanations of their classifications. Moreover, they do not showcase to the user healthier alternatives of communication.</p>
                     </div>
-                    <h2 className="w-full text-3xl text-left mt-5 mb-5">What we learned about the technology</h2>
-                    <p className="w-full text-xl text-left mt-5 mb-5">In our literature overview of existing toxicity detection models, we came to the conclusion that there are different technologies that have proven accurate for the task. The two main ones are outlined below.<br /><br />
+                    <h2 className="w-full text-3xl text-justify mt-5 mb-5">What we learned about the technology</h2>
+                    <p className="w-full text-xl text-justify mt-5 mb-5">In our literature overview of existing toxicity detection models, we came to the conclusion that there are different technologies that have proven accurate for the task. The two main ones are outlined below.<br /><br />
 
 When prompted effectively, generative LLMs are accurate classifiers for nuanced language tasks and can generate persuasive messages. However, they can be quite expensive, slow and can generate hallucinations. <br /><br />
 
@@ -47,7 +47,7 @@ We concluded that leveraging these two classification tools can yield great resu
                     <div className="bg-[url('/build.png')] bg-cover bg-center bg-no-repeat flex h-auto gap-4 content-start relative p-8 sm:p-12 border border-neutral-400/30 rounded-xl shadow-sm justify-center">
                     <h2 className="w-full text-4xl text-center mb-0">What have we built?</h2>
                     </div>
-                    <div className="w-full text-xl text-left mt-5 mb-5">We have built <a href="https://t.me/DetoxigramBot" className="text-red-600 font-bold underline">Detoxigram</a>, a tool that analyzes toxicity in text channels, explains its decisions and detoxifies messages with the goal of reducing negative interactions and promoting constructive dialogue. <br /><br />
+                    <div className="w-full text-xl text-justify mt-5 mb-5">We have built <a href="https://t.me/DetoxigramBot" className="text-red-600 font-bold underline">Detoxigram</a>, a tool that analyzes toxicity in text channels, explains its decisions and detoxifies messages with the goal of reducing negative interactions and promoting constructive dialogue. <br /><br />
 
 In order to achieve this, we proposed a toxicity-detection pipeline that combines generative LLMs and BERT to exploit their strengths efficiently.<br /><br />
 
@@ -70,13 +70,18 @@ We decided to use generative LLMs for the following tasks:<br />
 </ul> <br /> 
 
 The Detoxigram classification pipeline can then be outlined through the following steps:<br /><br />
-We extract the last 50 messages of a given Telegram channel.<br /><br />
-We classify these messages using a BERT-based toxicity classifier.<br /><br />
-We then take the 10 most toxic messages from the previous step and we again classify them using a generative LLM. This ensures we accurately portray the toxicity of the Telegram channel. <br /><br />
-Finally we prompt the generative LLM to produce a short text explaining the classification of the Telegram channel, and we use the second BERT-based classifier to detect the toxicity attributes of the channel.<br /><br />
+<ul className="list-decimal list-inside text-lg leading-relaxed">
+<li className= "ml-4">We extract the last 50 messages of a given Telegram channel.<br /><br /></li>
+<li className= "ml-4">We classify these messages using a BERT-based toxicity classifier.<br /><br /></li>
+<li className= "ml-4">We then take the 10 most toxic messages from the previous step and we again classify them using a generative LLM. This ensures we accurately portray the toxicity of the Telegram channel. <br /><br /></li>
+<li className= "ml-4">Finally we prompt the generative LLM to produce a short text explaining the classification of the Telegram channel, and we use the second BERT-based classifier to detect the toxicity attributes of the channel. <br /><br /></li>
+</ul>
+<img src="/Pipeline.png" className="w-full mt-5 mb-5" />
+
+<p className="bg-red-600 text-white w-fit text-xl">You can check our <a href="https://github.com/LIA-DiTella/Detoxigram" className="underline text-white font-bold">code here.</a></p>
 </div>
-<h2 className="w-full text-2xl text-left mt-5 mb-5 font-bold">Main advantages of Detoxigram</h2>
-<div className="w-full text-xl text-left mt-5 mb-5"><div className="underline mb-2">Tailored and persuasive explanation</div>
+<h2 className="w-full text-2xl text-justify mt-5 mb-5 font-bold">Main advantages of Detoxigram</h2>
+<div className="w-full text-xl text-justify mt-5 mb-5"><div className="underline mb-2">Tailored and persuasive explanation</div>
 Detoxigram is able to provide an explanation of why the channel was classified with a certain level of toxicity, a summary of the main topics discussed in the channel, and a brief overview of the potential consequences for the user engaging with such content.<br /><br />
 <div className="underline mt-1 mb-2">Costs</div>
 By using a BERT classifier to reduce the number of messages classified by our generative LLM, we reduce in 5 the amount of calls done to the API of the chosen LLM. We calculated these values and concluded that the price of analyzing a channel using our pipeline is, on average, $0.0017 USD.<br /><br />
@@ -99,7 +104,7 @@ Developed with open source technology, Detoxigram doesn’t have third parties d
                     <div className="bg-[url('/future.png')] bg-cover bg-center bg-no-repeat flex h-auto gap-4 content-start relative p-8 sm:p-12 border border-neutral-400/30 rounded-xl shadow-sm justify-center">
                     <h2 className="w-full text-4xl text-center mb-0">What are our plans for the future?</h2>
                     </div>                                  
-                    <div className="w-full text-xl text-left mt-5 mb-5">
+                    <div className="w-full text-xl text-justify mt-5 mb-5">
     <ul className="list-disc list-inside text-lg leading-relaxed">
         <li className="mt-4 mb-4"><span className="font-bold">Twitter Analyzer (Live beta):</span> We've developed a real-time Twitter data analysis tool that provides detailed insights into the level of toxicity in a user's content. This helps to understand the implications of the content we consume in a very engaging way.</li>
         <li className="mt-4 mb-4"><span className="font-bold">Twitter Bot Integration:</span> We aim to create a Twitter bot seamlessly integrated into X, providing users with an intuitive way to interact with our platform, perform various tasks, and receive personalized recommendations on the content they consume.</li>

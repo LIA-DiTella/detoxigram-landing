@@ -29,7 +29,7 @@ export const Footer = () => {
                     <div className="wrap grid text-center relative">
                         <div className="footer-credit--item flex flex-wrap justify-center ">
                             <p className="my-0">
-                                © {year} CIAN Di Tella. All rights reserved.
+                                © {year} Detoxigram. All rights reserved.
                             </p>
                         </div>
                     </div>

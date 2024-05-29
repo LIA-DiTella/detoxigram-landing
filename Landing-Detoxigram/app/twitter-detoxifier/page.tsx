@@ -1,9 +1,10 @@
 'use client'
 import Link from "next/link";
 import ToxicityPredictionForm from "@/components/global/toxicity_form";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Home() {
+
     return (
         <section className="wrap-md w-full wrap-px pt-4 mx-auto">
             <div className="grid grid-cols-6 gap-4">
@@ -22,3 +23,4 @@ export default function Home() {
         </section>
     );
 }
+
