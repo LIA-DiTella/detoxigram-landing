@@ -76,16 +76,22 @@ export default function Home() {
                 <div className="grid col-span-3 grid-row-3 gap-4">
                 {/* Div Número 2 */}
                 <motion.div initial="hidden" animate="show" variants={variants} className="col-span-6 sm:col-span-3 md:col-span-3">
-                        <div className="flex flex-wrap w-full h-full md:h-full content-start bg-[url('/analyze.png')] bg-cover bg-center bg-no-repeat relative aspect-square md:aspect-auto px-8 py-8 border border-neutral-400/30 rounded-xl shadow-sm overflow-hidden items-center">
-                        <div className="relative h-full w-full flex flex-col justify-center items-center">
-                            <div className="content flex flex-col sm:flex-row gap-4 sm:gap-10 text-black justify-center md:max-w-64 relative z-10">
-                                <h2 className="text-xl sm:text-3xl md:text-xl mb-0 w-full sm:w-3/4 text-center sm:text-left"><span className="underline">Analyze</span> the content</h2>
-                                <img src="/Lupa.png" alt="Lupa" className="w-full sm:w-9/12 h-auto" />
+                <div className="flex flex-wrap w-full h-full md:h-full content-start bg-[url('/analyze.png')] bg-cover bg-center bg-no-repeat relative aspect-square md:aspect-auto px-8 py-8 border border-neutral-400/30 rounded-xl shadow-sm overflow-hidden items-center">
+                    <div className="relative h-full w-full flex flex-col justify-center items-center">
+                        <div className="content flex flex-col sm:flex-row gap-4 sm:gap-10 text-black justify-center md:max-w-64 relative z-10 h-full items-center">
+                            <div className="flex flex-col justify-center items-center w-full h-full">
+                                <h2 className="text-xl sm:text-3xl md:text-xl mb-0 w-full text-center">
+                                    <span className="underline block">Analyze</span>
+                                    <span className="block">content</span>
+                                </h2>
                             </div>
-                            <div className="image-container absolute flex bottom-0">
-                            </div>
+                            <img src="/Lupa.png" alt="Lupa" className="w-full sm:w-9/12 h-auto" />
                         </div>
-                    </div>
+                    <div className="image-container absolute flex bottom-0">
+                </div>
+            </div>
+            </div>
+
                 </motion.div>
                 {/* Div Número 3 */}
                 <motion.div initial="hidden" animate="show" variants={variants} className="col-span-6 sm:col-span-3 md:col-span-3">
