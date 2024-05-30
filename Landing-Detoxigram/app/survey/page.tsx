@@ -26,8 +26,7 @@ export default function Home() {
 
                 {/* Graphs Section */}
                 <div className="col-span-6 grid grid-cols-1 gap-4">
-                    <div className="bg-neutral-300/20 p-8 sm:p-12 border border-neutral-400/30 rounded-xl shadow-sm">
-                        <p className="text-center bg-red-500 text-white">Age distribution:</p>
+                    <div className="bg-neutral-300/20 p-7 sm:p-9 border border-neutral-400/30 rounded-xl shadow-sm">
                         <iframe 
                             src='https://flo.uri.sh/visualisation/18158523/embed'
                             title='CAMBIAR' 
@@ -40,9 +39,8 @@ export default function Home() {
                     </div>
 
                     <div className="bg-neutral-300/20 p-8 sm:p-12 border border-neutral-400/30 rounded-xl shadow-sm">
-                        <p className="text-center bg-red-500 text-white">Political affiliation:</p>
                         <iframe 
-                            src='https://flo.uri.sh/visualisation/18158221/embed' 
+                            src='https://flo.uri.sh/visualisation/18175928/embed'
                             title='CAMBIAR' 
                             className='flourish-embed-iframe' 
                             frameBorder='0' 
@@ -53,9 +51,8 @@ export default function Home() {
                     </div>
 
                     <div className="bg-neutral-300/20 p-8 sm:p-12 border border-neutral-400/30 rounded-xl shadow-sm">
-                        <p className="text-center bg-red-500 text-white">Gender distribution:</p>
                         <iframe 
-                            src='https://flo.uri.sh/visualisation/18157605/embed' 
+                            src='https://flo.uri.sh/visualisation/18175979/embed' 
                             title='CAMBIAR' 
                             className='flourish-embed-iframe' 
                             frameBorder='0' 
@@ -66,9 +63,8 @@ export default function Home() {
                     </div>
 
                     <div className="bg-neutral-300/20 p-8 sm:p-12 border border-neutral-400/30 rounded-xl shadow-sm">
-                        <p className="text-center bg-red-500 text-white">Education:</p>
                         <iframe 
-                            src='https://flo.uri.sh/visualisation/18158680/embed' 
+                            src='https://flo.uri.sh/visualisation/18176006/embed' 
                             title='CAMBIAR' 
                             className='flourish-embed-iframe' 
                             frameBorder='0' 
