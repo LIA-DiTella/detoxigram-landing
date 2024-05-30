@@ -22,8 +22,8 @@ export default function Home() {
                 </div>
 
                 {/* Graphs Section */}
-                <div className="col-span-6 grid grid-cols-1 gap-4">
-                    <div className="bg-neutral-300/20 p-7 sm:p-9 border border-neutral-400/30 rounded-xl shadow-sm">
+                <div className="col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div className="bg-neutral-300/20 p-2 sm:p-2 border border-neutral-400/30 rounded-xl shadow-sm">
                         <iframe 
                             src='https://flo.uri.sh/visualisation/18158523/embed'
                             title='CAMBIAR' 
@@ -35,7 +35,7 @@ export default function Home() {
                         ></iframe>
                     </div>
 
-                    <div className="bg-neutral-300/20 p-8 sm:p-12 border border-neutral-400/30 rounded-xl shadow-sm">
+                    <div className="bg-neutral-300/20 p-2 sm:p-2 border border-neutral-400/30 rounded-xl shadow-sm">
                         <iframe 
                             src='https://flo.uri.sh/visualisation/18175928/embed'
                             title='CAMBIAR' 
@@ -47,7 +47,7 @@ export default function Home() {
                         ></iframe>
                     </div>
 
-                    <div className="bg-neutral-300/20 p-8 sm:p-12 border border-neutral-400/30 rounded-xl shadow-sm">
+                    <div className="bg-neutral-300/20 p-2 sm:p-2 border border-neutral-400/30 rounded-xl shadow-sm">
                         <iframe 
                             src='https://flo.uri.sh/visualisation/18175979/embed' 
                             title='CAMBIAR' 
@@ -59,7 +59,7 @@ export default function Home() {
                         ></iframe>
                     </div>
 
-                    <div className="bg-neutral-300/20 p-8 sm:p-12 border border-neutral-400/30 rounded-xl shadow-sm">
+                    <div className="bg-neutral-300/20 p-2 sm:p-2 border border-neutral-400/30 rounded-xl shadow-sm">
                         <iframe 
                             src='https://flo.uri.sh/visualisation/18176006/embed' 
                             title='CAMBIAR' 
@@ -87,7 +87,6 @@ export default function Home() {
                 {/* Detailed Analysis Graphs */}
                 <div className="col-span-6 grid grid-cols-1 gap-4">
                     <div className="bg-neutral-300/20 p-8 sm:p-12 border border-neutral-400/30 rounded-xl shadow-sm">
-                        <p className="mb-4">Participants judged the sentence:</p>
                         <p className="mb-4 text-center bg-gray-300 px-2 py-1 rounded-md">
                         "Exactly the reason my 5.56 and 7.62 and 9mm will never be given up. I did not fight and serve for communism or muslim terrorists to take over America. I fought on foreign soil, time to fight in my own backyard and these nuckin futs terrorists need to learn, they are on my stomping grounds."
                          </p>
@@ -103,7 +102,6 @@ export default function Home() {
                     </div>
 
                     <div className="bg-neutral-300/20 p-8 sm:p-12 border border-neutral-400/30 rounded-xl shadow-sm">
-                    <p className="mb-4">Participants judged the sentence:</p>
                         <p className=" text-center mb-4 bg-gray-300 px-2 py-1 rounded-md">
                         "Trans is a mental disorder"
                          </p>
@@ -119,12 +117,11 @@ export default function Home() {
                     </div>
 
                     <div className="bg-neutral-300/20 p-8 sm:p-12 border border-neutral-400/30 rounded-xl shadow-sm">
-                    <p className="mb-4">Participants judged the sentence:</p>
                     <p className=" text-center mb-4 bg-gray-300 px-2 py-1 rounded-md">
-                        "Exactly the reason my 5.56 and 7.62 and 9mm will never be given up. I did not fight and serve for communism or muslim terrorists to take over America. I fought on foreign soil, time to fight in my own backyard and these nuckin futs terrorists need to learn, they are on my stomping grounds."
+                        "Her hearts not at fault here it’s the LACK of brain cells"
                     </p>
                         <iframe 
-                            src='https://flo.uri.sh/visualisation/18176640/embed' 
+                            src='https://flo.uri.sh/visualisation/18177593/embed' 
                             title='CAMBIAR' 
                             className='flourish-embed-iframe' 
                             frameBorder='0' 
