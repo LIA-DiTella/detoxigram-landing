@@ -79,7 +79,7 @@ export default function Home() {
                         <div className="flex flex-wrap w-full h-full md:h-full content-start bg-[url('/analyze.png')] bg-cover bg-center bg-no-repeat relative aspect-square md:aspect-auto px-8 py-8 border border-neutral-400/30 rounded-xl shadow-sm overflow-hidden items-center">
                         <div className="relative h-full w-full flex flex-col justify-center items-center">
                             <div className="content flex flex-col sm:flex-row gap-4 sm:gap-10 text-black justify-center md:max-w-64 relative z-10">
-                                <h2 className="text-2xl sm:text-2xl md:text-2xl sm:w-3/4 text-center sm:text-left"><span className="underline">Analyze</span> content</h2>
+                                <h2 className="text-2xl sm:text-2xl md:text-2xl sm:w-3/4 text-center sm:text-left mb-0"><span className="underline">Analyze</span> content</h2>
                                 <img src="/Lupa.png" alt="Lupa" className="w-full sm:w-9/12 h-auto" />
                             </div>
 

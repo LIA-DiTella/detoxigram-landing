@@ -25,15 +25,12 @@ export default function Home() {
                     Inspired by previous literature (Zhixue et al., 2021; Ousidhoum et al., 2021; Fortuna et al., 2021), we characterized toxicity as a <span className="font-bold">range</span> of disrespectful and harmful user-generated content, <span className="font-bold">not as a binary element.</span> As such we decided to measure and evaluate toxicity using a scale that aligns with how individuals might perceive and react towards toxic messages online. The scale we used is the following:<br /><br />
 
 We measured toxicity using a scale that aligns with how individuals perceive and evaluate real messages on platforms like Telegram. This scale is categorized into five levels:<br /><br />
-<ul className="list-disc list-inside text-xl leading-relaxed">
-<li><span className="font-bold">🟢 Non-toxic:</span> Respectful and constructive. Does not contain personal attacks or offensive content.</li>
-<li><span className="font-bold">🟡 Slightly Toxic:</span> Although mostly respectful, it suggests a lack of appreciation for the viewpoints of others. It does not directly attack individuals or groups.</li>
-<li className="font-bold">🟠 Moderately Toxic: Features a clearly disrespectful tone. Does not involve violent attacks.</li>
-<li><span className="font-bold">🔴 Highly Toxic:</span> Insulting and aggressive. Targets groups and individuals based on their gender, ethnicity, sexual orientation, ideology, or religion.
-</li>
-<li><span className="font-bold">🔴 Extremely Toxic:</span> In addition to the elements of highly toxic messages, this includes threats or calls to violent action.<br /><br />
-</li>
-</ul>
+<span className="font-bold">🟢 Non-toxic:</span> Respectful and constructive. Does not contain personal attacks or offensive content.<br /><br />
+<span className="font-bold">🟡 Slightly Toxic:</span> Although mostly respectful, it suggests a lack of appreciation for the viewpoints of others. It does not directly attack individuals or groups.<br /><br />
+<span className="font-bold">🟠 Moderately Toxic: </span> Features a clearly disrespectful tone. Does not involve violent attacks.<br /><br />
+<span className="font-bold">🔴 Highly Toxic:</span> Insulting and aggressive. Targets groups and individuals based on their gender, ethnicity, sexual orientation, ideology, or religion.<br /><br />
+<span className="font-bold">🔴 Extremely Toxic:</span> In addition to the elements of highly toxic messages, this includes threats or calls to violent action.<br /><br />
+
 In line with this definition we did an online survey with a sample of N=300 Americans that was balanced in terms of gender and political orientation. <a href="https://es.surveymonkey.com/r/J5X6PXH" className="underline">This survey</a> was then used as ground truth for our classifier.
 </div>
 <h2 className="w-full text-2xl text-justify mt-5 mb-5 text-bold">Multiple attributes in toxicity</h2>
@@ -70,7 +67,7 @@ We decided to use Mixtral of Experts (JIANG, Albert Q., et al. Mixtral of expert
                     <div className="bg-[url('/build.png')] bg-cover bg-center bg-no-repeat flex h-auto gap-4 content-start relative p-8 sm:p-12 border border-neutral-400/30 rounded-xl shadow-sm justify-center">
                     <h2 className="w-full text-4xl text-center mb-0">What have we built?</h2>
                     </div>
-                    <div className="w-full text-xl text-justify mt-5 mb-5">We have built <a href="https://t.me/DetoxigramBot" className="text-red-600 font-bold underline">Detoxigram</a>, a tool that analyzes toxicity in text channels, explains its decisions and detoxifies messages with the goal of reducing negative interactions and promoting constructive dialogue. <br /><br />
+                    <div className="w-full text-xl text-justify mt-5 mb-5">We have built <a href="https://t.me/DetoxigramBot" className="text-red-600 font-bold underline">Detoxigram</a>, a tool that analyzes toxicity in text channels, explains its decisions and detoxifies messages with the goal of reducing negative interactions and promoting constructive dialogue. As far as we know, Detoxigram is the first ever toxicity classifier that also accurately explains its classifications. Detoxigram both classifies tele  gram channels and provides metrics with tailored explanations of its classification. <br /><br />
 
 In order to achieve this, we proposed a toxicity-detection pipeline that combines generative LLMs and BERT to exploit their strengths efficiently.<br /><br />
 
@@ -103,6 +100,31 @@ The Detoxigram classification pipeline can then be outlined through the followin
 
 <p className="bg-red-600 text-white w-fit text-xl">You can check our <a href="https://github.com/LIA-DiTella/Detoxigram" className="underline text-white font-bold">code here.</a></p>
 </div>
+
+<h2 className="w-full text-2xl text-justify mt-5 mb-5 text-bold">What users can do with Detoxigram?</h2>
+<div className="w-full text-xl text-justify mt-5 mb-5">Telegram users who use Detoxigram have the following tools at their disposal to manage and understand toxicity in their conversations: <br /> <br />
+
+<span className="font-bold">Analyze a Channel:</span> users can use Detoxigram to analyze the toxicity level of any public Telegram channel. By simply inputting the channel name, our tool will scan and evaluate recent messages to provide a classification. This helps users understand the general tone and health of the conversations within the channel. <br />
+
+<div className="flex justify-center items-center">
+    <img src="/analyze_ex.png" className="w-1/2 mt-5 mb-5" />
+</div>
+<span className="font-bold">Understand Why It Is Toxic:</span> Detoxigram not only identifies toxic messages but also provides detailed explanations for each classification. This feature helps users understand the reasons behind the toxicity ratings, offering insights into the specific elements and language that contribute to harmful interactions, while also explaining the consequences for the user.<br />
+
+<div className="flex justify-center items-center">
+    <img src="/explanation.png" className="w-4/6 mt-5 mb-5" />
+</div>
+
+<span className="font-bold">Visualize the Dimensions of Toxicity:</span> Our tool categorizes toxicity into various dimensions, such as sarcasm, antagonism, generalization, and dismissiveness. Users will be able to visualize these dimensions to get a nuanced view of how toxicity manifests in different forms.<br />
+<div className="flex justify-center items-center">
+    <img src="/dimensions.png" className="w-4/6 mt-5 mb-5" />
+</div>
+<span className="font-bold">Detoxify Your Own Messages:</span> Detoxigram also offers a unique feature that allows users to detoxify your own messages before posting them. By running their text through our tool, they can receive suggestions on how to rephrase or adjust your message to avoid potential toxicity. This proactive approach helps users to communicate more effectively and constructively, fostering healthier interactions.<br />
+<div className="flex justify-center items-center">
+    <img src="/detoxify_ex.png" className="w-4/6 mt-5 mb-5" />
+</div>
+</div>
+
 <h2 className="w-full text-2xl text-justify mt-5 mb-5 font-bold">Main advantages of Detoxigram</h2>
 <div className="w-full text-xl text-justify mt-5 mb-5"><div className="underline mb-2">Tailored and persuasive explanation</div>
 Detoxigram is able to provide an explanation of why the channel was classified with a certain level of toxicity, a summary of the main topics discussed in the channel, and a brief overview of the potential consequences for the user engaging with such content.<br /><br />
@@ -154,6 +176,8 @@ Developed with open source technology, Detoxigram doesn’t have third parties d
         <li className="mt-4 mb-4">Hartvigsen, T., Gabriel, S., Palangi, H., Sap, M., Ray, D., & Kamar, E. (2022). <a href="https://arxiv.org/abs/2203.09509" className="underline">Toxigen: A large-scale machine-generated dataset for adversarial and implicit hate speech detection.</a> arXiv preprint arXiv:2203.09509.</li>
     </ol>
 </div>
+                    <Button className="bg-red-600 hover:bg-red-700" link= "https://t.me/DetoxigramBot" target="_blank">
+Dowload report                    </Button>
                     </div>
                 </div>
             </div>
