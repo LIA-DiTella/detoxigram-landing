@@ -44,27 +44,27 @@ const ToxicityPredictionForm = () => {
     const predictToxicity = async () => {
         setIsLoading(true);  
         try {
-            // const response = await fetch('http://localhost:8000/predict/', {
-            //     method: 'POST',
-            //     headers: {
-            //         'Content-Type': 'application/json'
-            //     },
-            //     body: JSON.stringify({ username: username })  
-            // });
+            const response = await fetch('http://localhost:8000/predict/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ username: username })  
+            });
     
-            // if (!response.ok) {
-            //     throw new Error(`HTTP error! status: ${response.status}`);
-            // }
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
     
-            // const data = await response.json();
-            // console.log("Response Data:", data); 
-            const data = {
-                total_toxicity: 0.60,
-                most_toxic_message: "States want to correct their votes, which they now know were based on irregularities and fraud, plus corrupt process never received legislative approval.  All Mike Pence has to do is send them back to the States, AND WE WIN. Do it Mike, this is a time for extreme courage!",
-                why_toxicity: "The message is 🔴 Highly Toxic due to its inflammatory language and accusations.",
-                detoxified_most_toxic: "States have identified issues with their initial vote counts and are working to correct them. It would be beneficial if the Vice President could assist in this process to ensure all votes are accurately counted and legitimate.",
-                toxicity_score: 0.85
-            };
+            const data = await response.json();
+            console.log("Response Data:", data); 
+            // const data = {
+            //     total_toxicity: 0.60,
+            //     most_toxic_message: "States want to correct their votes, which they now know were based on irregularities and fraud, plus corrupt process never received legislative approval.  All Mike Pence has to do is send them back to the States, AND WE WIN. Do it Mike, this is a time for extreme courage!",
+            //     why_toxicity: "The message is 🔴 Highly Toxic due to its inflammatory language and accusations.",
+            //     detoxified_most_toxic: "States have identified issues with their initial vote counts and are working to correct them. It would be beneficial if the Vice President could assist in this process to ensure all votes are accurately counted and legitimate.",
+            //     toxicity_score: 0.85
+            // };
             setPrediction(data); 
         } catch (error) {
             console.error('Error:', error);
