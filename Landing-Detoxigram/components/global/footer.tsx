@@ -18,7 +18,7 @@ export const Footer = () => {
                                     </svg>                                   
                                 </a>
                             </h1>
-                            <p className="text-base">Building a better internet</p>
+                            <p className="text-base">Explaining online detoxification</p>
                     <Button className="bg-red-600 hover:bg-red-700 mt-6 md:mt-8" link= "https://t.me/DetoxigramBot" target="_blank">
                         Talk with detoxi
                     </Button>
@@ -29,7 +29,7 @@ export const Footer = () => {
                     <div className="wrap grid text-center relative">
                         <div className="footer-credit--item flex flex-wrap justify-center ">
                             <p className="my-0">
-                                © {year} CIAN Di Tella. All rights reserved.
+                                © {year} Detoxigram. All rights reserved.
                             </p>
                         </div>
                     </div>

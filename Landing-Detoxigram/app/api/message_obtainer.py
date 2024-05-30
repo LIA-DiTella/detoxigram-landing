@@ -20,35 +20,36 @@ class messages_obtainer:
         self.login()
 
     def login(self):
+        try:
+            self.chrome_options.add_argument("--headless")  
+            self.chrome_options.add_argument("--no-sandbox")
+            self.chrome_options.add_argument("--disable-dev-shm-usage")
 
-        self.chrome_options.add_argument("--headless")  
-        self.chrome_options.add_argument("--no-sandbox")
-        self.chrome_options.add_argument("--disable-dev-shm-usage")
-        
+            self.driver.get("https://twitter.com/login")
+            print("Página de inicio de sesión cargada")
 
-        self.driver.get("https://twitter.com/login")
+            time.sleep(10)
+            print("Esperando 10 segundos para cargar la página")
 
-        print("Página de inicio de sesión cargada")
+            username_field = self.driver.find_element(By.NAME, "text")
+            time.sleep(self.random_wait)
+            username_field.send_keys(self.username)
+            print("Nombre de usuario ingresado")
+            username_field.send_keys(Keys.RETURN)
+            time.sleep(2)
+            password_field = self.driver.find_element(By.NAME, "password")
+            password_field.send_keys(self.password)
+            time.sleep(self.random_wait)
+            print("Contraseña ingresada")
+            password_field.send_keys(Keys.RETURN)
+            print("Iniciando sesión...")
+        except Exception as e:
+            print(f"Failed to log in: {e}")
+            raise e
 
-        time.sleep(5)
-        print("Esperando 5 segundos para cargar la página")
-
-        username_field = self.driver.find_element(By.NAME, "text")
-        time.sleep(self.random_wait)
-        username_field.send_keys(self.username)
-        print("Nombre de usuario ingresado")
-        username_field.send_keys(Keys.RETURN)
-        time.sleep(2)
-        time.sleep(self.random_wait)
-        password_field = self.driver.find_element(By.NAME, "password")
-        password_field.send_keys(self.password)
-        time.sleep(self.random_wait)
-        print("Contraseña ingresada")
-        password_field.send_keys(Keys.RETURN)
-
-        print("Iniciando sesión...")
 
     def get_messages(self, user):
+        start_time = time.time()
         time.sleep(self.random_wait)
         self.driver.get(f"https://x.com/search?q=(from%3A{user})%20until%3A2024-05-10%20since%3A2021-01-01%20-filter%3Alinks%20-filter%3Areplies&src=typed_query&f=live")
         # self.driver.get(f"https://x.com/search?q=from:{user}&src=typed_query&f=live")
@@ -79,7 +80,7 @@ class messages_obtainer:
                     collected_tweets.add(tweet_text)  
 
             print(f"Collected {len(collected_tweets)} tweets so far")
-            if len(collected_tweets) > 30: 
+            if len(collected_tweets) > 30 or (time.time() - start_time > 15 and len(collected_tweets) == 0): 
                 scrolling = False
 
-        return list(collected_tweets)  
+        return list(collected_tweets) if collected_tweets else list("I was not posible to collect any tweet from this user")
