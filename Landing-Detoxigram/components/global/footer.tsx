@@ -18,7 +18,7 @@ export const Footer = () => {
                                     </svg>                                   
                                 </a>
                             </h1>
-                            <p className="text-base">Building a better internet</p>
+                            <p className="text-base">Explaining online detoxification</p>
                     <Button className="bg-red-600 hover:bg-red-700 mt-6 md:mt-8" link= "https://t.me/DetoxigramBot" target="_blank">
                         Talk with detoxi
                     </Button>
