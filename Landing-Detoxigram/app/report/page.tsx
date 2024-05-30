@@ -114,7 +114,7 @@ Participants rated the toxicity of 30 messages (sourced from different Telegram 
                         </div>
                       </div>
           
-                      <h2 className="w-full text-2xl text-justify mt-5 mb-5 text-bold">What users can do with Detoxigram?</h2>
+                      <h2 className="w-full text-2xl text-justify mt-5 mb-5 text-bold">What can users do with Detoxigram?</h2>
                       <div className="w-full text-xl text-justify mt-5 mb-5">
                         Telegram users who use Detoxigram have the following tools at their disposal to manage and understand toxicity in their conversations: <br /> <br />
                         <span className="font-bold">Analyze a Channel:</span> users can use Detoxigram to analyze the toxicity level of any public Telegram channel. By simply inputting the channel name, our tool will scan and evaluate recent messages to provide a classification. This helps users understand the general tone and health of the conversations within the channel. <br />
