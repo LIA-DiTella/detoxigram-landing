@@ -80,7 +80,7 @@ export default function Home() {
                     <div className="relative h-full w-full flex flex-col justify-center items-center">
                         <div className="content flex flex-col sm:flex-row gap-4 sm:gap-10 text-black justify-center md:max-w-64 relative z-10 h-full items-center">
                             <div className="flex flex-col justify-center items-center w-full h-full">
-                                <h2 className="text-xl sm:text-3xl md:text-xl mb-0 w-full text-center">
+                                <h2 className="text-xl sm:text-3xl md:text-xl mb-0 w-full text-left">
                                     <span className="underline block">Analyze</span>
                                     <span className="block">content</span>
                                 </h2>

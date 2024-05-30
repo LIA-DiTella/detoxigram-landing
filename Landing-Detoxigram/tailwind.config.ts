@@ -112,7 +112,8 @@ const config: Config = {
                     950: "#000000"
                 },
                 badge: "#F1F5F9",
-                badgeText: "#475569"
+                badgeText: "#475569",
+                added_pato: "#E8DFCD"
             }
         }
     },

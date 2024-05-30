@@ -23,50 +23,50 @@ export default function Home() {
 
                 {/* Graphs Section */}
                 <div className="col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div className="bg-neutral-300/20 p-2 sm:p-2 border border-neutral-400/30 rounded-xl shadow-sm">
+                    <div className="p-8 sm:p-0 border border-neutral-400/30 rounded-xl shadow-sm flex justify-center">
                         <iframe 
                             src='https://flo.uri.sh/visualisation/18158523/embed'
                             title='CAMBIAR' 
                             className='flourish-embed-iframe' 
                             frameBorder='0' 
                             scrolling='no' 
-                            style={{ width: '100%', height: '600px' }} 
+                            style={{ width: '75%', height: '450px' }} 
                             sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'
                         ></iframe>
                     </div>
-
-                    <div className="bg-neutral-300/20 p-2 sm:p-2 border border-neutral-400/30 rounded-xl shadow-sm">
+                    
+                    <div className="p-8 sm:p-0 border border-neutral-400/30 rounded-xl shadow-sm flex justify-center">
                         <iframe 
                             src='https://flo.uri.sh/visualisation/18175928/embed'
                             title='CAMBIAR' 
                             className='flourish-embed-iframe' 
                             frameBorder='0' 
                             scrolling='no' 
-                            style={{ width: '100%', height: '600px' }} 
+                            style={{ width: '75%', height: '450px' }} 
                             sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'
                         ></iframe>
                     </div>
 
-                    <div className="bg-neutral-300/20 p-2 sm:p-2 border border-neutral-400/30 rounded-xl shadow-sm">
+                    <div className="p-8 sm:p-0 border border-neutral-400/30 rounded-xl shadow-sm flex justify-center">
                         <iframe 
                             src='https://flo.uri.sh/visualisation/18175979/embed' 
                             title='CAMBIAR' 
                             className='flourish-embed-iframe' 
                             frameBorder='0' 
                             scrolling='no' 
-                            style={{ width: '100%', height: '600px' }} 
+                            style={{ width: '75%', height: '450px' }} 
                             sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'
                         ></iframe>
                     </div>
 
-                    <div className="bg-neutral-300/20 p-2 sm:p-2 border border-neutral-400/30 rounded-xl shadow-sm">
+                    <div className="p-8 sm:p-0 border border-neutral-400/30 rounded-xl shadow-sm flex justify-center">
                         <iframe 
                             src='https://flo.uri.sh/visualisation/18176006/embed' 
                             title='CAMBIAR' 
                             className='flourish-embed-iframe' 
                             frameBorder='0' 
                             scrolling='no' 
-                            style={{ width: '100%', height: '600px' }} 
+                            style={{ width: '75%', height: '450px' }} 
                             sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'
                         ></iframe>
                     </div>
@@ -86,52 +86,64 @@ export default function Home() {
 
                 {/* Detailed Analysis Graphs */}
                 <div className="col-span-6 grid grid-cols-1 gap-4">
-                    <div className="bg-neutral-300/20 p-8 sm:p-12 border border-neutral-400/30 rounded-xl shadow-sm">
-                        <p className="mb-4 text-center bg-gray-300 px-2 py-1 rounded-md">
+                    <div className="bg-neutral-300/20 p-8 sm:p-0 border border-neutral-400/30 rounded-xl shadow-sm">
+                        <p className="mb-5 mt-2 text-center">
                         "Exactly the reason my 5.56 and 7.62 and 9mm will never be given up. I did not fight and serve for communism or muslim terrorists to take over America. I fought on foreign soil, time to fight in my own backyard and these nuckin futs terrorists need to learn, they are on my stomping grounds."
-                         </p>
+                        </p>
+                        <div className="flex justify-center">
                         <iframe 
                             src='https://flo.uri.sh/visualisation/18176640/embed' 
                             title='CAMBIAR' 
                             className='flourish-embed-iframe' 
                             frameBorder='0' 
                             scrolling='no' 
-                            style={{ width: '100%', height: '600px' }} 
+                            style={{ width: '60%', height: '360px' }} 
                             sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'
                         ></iframe>
+                        </div>
                     </div>
 
-                    <div className="bg-neutral-300/20 p-8 sm:p-12 border border-neutral-400/30 rounded-xl shadow-sm">
-                        <p className=" text-center mb-4 bg-gray-300 px-2 py-1 rounded-md">
-                        "Trans is a mental disorder"
-                         </p>
-                        <iframe 
-                            src='https://flo.uri.sh/visualisation/18177064/embed'
-                            title='CAMBIAR' 
-                            className='flourish-embed-iframe' 
-                            frameBorder='0' 
-                            scrolling='no' 
-                            style={{ width: '100%', height: '600px' }} 
-                            sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'
-                        ></iframe>
+                    <div className="bg-neutral-300/20 p-8 sm:p-0 border border-neutral-400/30 rounded-xl shadow-sm ">
+                        <p className="mb-5 mt-2 text-center">"Trans is a mental disorder"</p>
+                            <div className="flex justify-center">
+                                <iframe 
+                                    src='https://flo.uri.sh/visualisation/18177064/embed'
+                                    title='CAMBIAR' 
+                                    className='flourish-embed-iframe' 
+                                    frameBorder='0' 
+                                    scrolling='no' 
+                                    style={{ width: '60%', height: '360px' }} 
+                                    sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'
+                                ></iframe>
+                            </div>
                     </div>
 
-                    <div className="bg-neutral-300/20 p-8 sm:p-12 border border-neutral-400/30 rounded-xl shadow-sm">
-                    <p className=" text-center mb-4 bg-gray-300 px-2 py-1 rounded-md">
-                        "Her hearts not at fault here it’s the LACK of brain cells"
-                    </p>
-                        <iframe 
-                            src='https://flo.uri.sh/visualisation/18177593/embed' 
-                            title='CAMBIAR' 
-                            className='flourish-embed-iframe' 
-                            frameBorder='0' 
-                            scrolling='no' 
-                            style={{ width: '100%', height: '600px' }} 
-                            sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'
-                        ></iframe>
+                    <div className="bg-neutral-300/20 p-8 sm:p-0 border border-neutral-400/30 rounded-xl shadow-sm">
+                        <p className=" text-center mb-5 mt-2 ">
+                            "Her hearts not at fault here it’s the LACK of brain cells"
+                        </p>
+                        <div className="flex justify-center">
+                            <iframe 
+                                src='https://flo.uri.sh/visualisation/18177593/embed' 
+                                title='CAMBIAR' 
+                                className='flourish-embed-iframe' 
+                                frameBorder='0' 
+                                scrolling='no' 
+                                style={{ width: '60%', height: '360px' }} 
+                                sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'
+                            ></iframe>
+                        </div>
                     </div>
                 </div>
-            </div>
+
+                {/*Tercer seccion */}
+
+                <div className="col-span-6">
+                        <p className= "w-full text-xl text-left mt-5 mb-5">
+                            Lastly, another intresting relationship we studied was
+                        </p>
+                </div>
+        </div>
         </section>
     );
 }
