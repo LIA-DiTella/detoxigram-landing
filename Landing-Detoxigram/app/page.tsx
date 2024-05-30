@@ -76,6 +76,7 @@ export default function Home() {
                 <div className="grid col-span-3 grid-row-3 gap-4">
                 {/* Div Número 2 */}
                 <motion.div initial="hidden" animate="show" variants={variants} className="col-span-6 sm:col-span-3 md:col-span-3">
+<<<<<<< Updated upstream
                 <div className="flex flex-wrap w-full h-full md:h-full content-start bg-[url('/analyze.png')] bg-cover bg-center bg-no-repeat relative aspect-square md:aspect-auto px-8 py-8 border border-neutral-400/30 rounded-xl shadow-sm overflow-hidden items-center">
                     <div className="relative h-full w-full flex flex-col justify-center items-center">
                         <div className="content flex flex-col sm:flex-row gap-4 sm:gap-10 text-black justify-center md:max-w-64 relative z-10 h-full items-center">
@@ -86,6 +87,17 @@ export default function Home() {
                                 </h2>
                             </div>
                             <img src="/Lupa.png" alt="Lupa" className="w-full sm:w-9/12 h-auto" />
+=======
+                        <div className="flex flex-wrap w-full h-full md:h-full content-start bg-[url('/analyze.png')] bg-cover bg-center bg-no-repeat relative aspect-square md:aspect-auto px-8 py-8 border border-neutral-400/30 rounded-xl shadow-sm overflow-hidden items-center">
+                        <div className="relative h-full w-full flex flex-col justify-center items-center">
+                            <div className="content flex flex-col sm:flex-row gap-4 sm:gap-10 text-black justify-center md:max-w-64 relative z-10">
+                            <div className="flex items-center">
+                                <h2 className="text-2xl sm:text-2xl md:text-2xl sm:w-3/4 text-center sm:text-left mb-0"><span className="underline">Analyze</span> content</h2>
+                                <img src="/Lupa.png" alt="Lupa" className="w-full sm:w-9/12 h-auto" />
+                            </div>
+                            </div>
+
+>>>>>>> Stashed changes
                         </div>
                     <div className="image-container absolute flex bottom-0">
                 </div>

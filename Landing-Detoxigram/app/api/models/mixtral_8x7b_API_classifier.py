@@ -210,7 +210,7 @@ class mistral_classifier(Classifier):
 
 	def detoxify(self, message):
 		llm = self.chat
-		toxicity_result = self.mistral.predictToxicity(message)
+		toxicity_result = self.predictToxicity(message)
 		_, toxicity_score = toxicity_result
 		toxicity_score = str(toxicity_score)
 		prompt_template = ChatPromptTemplate.from_messages([
