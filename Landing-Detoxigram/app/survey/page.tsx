@@ -1,4 +1,5 @@
 import Image from "next/image"; 
+import { Button } from "@/components/global/button";
 
 export default function Home() {
     return (
@@ -8,7 +9,7 @@ export default function Home() {
                 <div className="col-span-6">
                     <div className="flex flex-wrap gap-4 content-start bg-[url('/bg-survey.png')] bg-cover bg-center bg-no-repeat relative p-8 sm:p-12 border aspect-video md:aspect-[3/1] border-neutral-400/30 rounded-xl shadow-sm overflow-hidden">
                         <div className="absolute flex w-full h-full inset-y-0 bottom-0 items-center right-0 flex-1">
-                            <span className="ml-10 w-3/6 block text-xl sm:text-4xl">Identifying Toxic discourse on Telegram Chats</span>
+                            <span className="ml-10 w-2/5 block text-xl sm:text-4xl">Identifying Toxic discourse on Telegram Chats</span>
                         </div>
                     </div>
                 </div>
@@ -80,13 +81,13 @@ export default function Home() {
                         The core of the survey focused on participants' classification of online messages based on their perceived toxicity. Respondents were presented with a series of messages (30 messages) and asked to rate each one on a predefined toxicity scale: Non-toxic, Slightly Toxic, Moderately Toxic, Highly Toxic, and Extremely Toxic. The messages varied in content and tone, they were selected to capture a range of potentially toxic behaviors including disrespect, hostility, and aggression. For each message, participants provided their assessment, which helped us gather subjective evaluations of message toxicity. <br /><br />This approach allowed us to collect nuanced data on how different types of toxic content are perceived by a diverse group of individuals. The collected ratings were then used to validate our toxicity classifier, ensuring that it accurately reflects the varied perceptions of toxicity in online communication.
                         </p>
                         <p className= "w-full text-xl text-justify mt-5 mb-5">
-                        The following series of graphs provides a detailed analysis of the survey responses. These visualizations illustrate the distribution of toxicity ratings across different messages, highlighting patterns in how respondents perceive various levels of toxicity.</p>
+                        The following series of graphs provides some insights on the survey responses. These visualizations illustrate the distribution of toxicity ratings across different messages, highlighting patterns in how respondents perceive various levels of toxicity.</p>
                 </div>
 
                 {/* Detailed Analysis Graphs */}
                 <div className="col-span-6 grid grid-cols-1 gap-4">
-                    <div className="bg-neutral-300/20 p-8 sm:p-0 border border-neutral-400/30 rounded-xl shadow-sm">
-                        <p className="mb-5 mt-2 text-center"> <span className="font-bold">Message:</span>
+                    <div className="bg-neutral-300/20 p-8 sm:p-5 border border-neutral-400/30 rounded-xl shadow-sm">
+                        <p className="mb-5 mt-2 text-center"> <span className="font-bold">Message: </span>
                         "Exactly the reason my 5.56 and 7.62 and 9mm will never be given up. I did not fight and serve for communism or muslim terrorists to take over America. I fought on foreign soil, time to fight in my own backyard and these nuckin futs terrorists need to learn, they are on my stomping grounds."
                         </p>
                         <div className="flex justify-center">
@@ -102,8 +103,8 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <div className="bg-neutral-300/20 p-8 sm:p-0 border border-neutral-400/30 rounded-xl shadow-sm ">
-                        <p className="mb-5 mt-2 text-center"><span className="font-bold">Message:</span>"Trans is a mental disorder"</p>
+                    <div className="bg-neutral-300/20 p-8 sm:p-5 border border-neutral-400/30 rounded-xl shadow-sm ">
+                        <p className="mb-5 mt-2 text-center"><span className="font-bold">Message: </span>"Trans is a mental disorder"</p>
                             <div className="flex justify-center">
                                 <iframe 
                                     src='https://flo.uri.sh/visualisation/18177064/embed'
@@ -118,7 +119,7 @@ export default function Home() {
                     </div>
 
                     <div className="bg-neutral-300/20 p-8 sm:p-0 border border-neutral-400/30 rounded-xl shadow-sm">
-                        <p className=" text-center mb-5 mt-2 "><span className="font-bold">Message:</span>
+                        <p className=" text-center mb-5 mt-2 "><span className="font-bold">Message: </span>
                             "Her hearts not at fault here it’s the LACK of brain cells"
                         </p>
                         <div className="flex justify-center">
@@ -133,6 +134,8 @@ export default function Home() {
                             ></iframe>
                         </div>
                     </div>
+                    <Button className="bg-red-600 hover:bg-red-700" link= "https://github.com/LIA-DiTella/detoxigram-landing/tree/main/Survey_Dataset" target="_blank">
+Go to dataset                </Button>
                 </div>  
         </div>
         </section>
