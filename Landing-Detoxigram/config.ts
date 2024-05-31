@@ -3,7 +3,7 @@ import { Site } from "./types";
 export const SITE: Site = {
     siteUrl: "https://detoxigram.com/", 
     author: "CIAN Di Tella",
-    desc: "Are you aware of how toxic is the content you consume?",
+    desc: "Helping users understand why content is classified as toxic",
     title: "Detoxigram",
     ogImage: "/portada.png",
     keywords:

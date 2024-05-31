@@ -22,11 +22,11 @@ export const metadata: Metadata = {
     },
     openGraph: {
         title: SITE.title || "Detoxigram",
-        description: SITE.desc || "Are you aware of how toxic is the content you consume?",
-        authors: SITE.author || "CIAN Di Tella",
+        description: SITE.desc || "Helping users understand why content is classified as toxic",
+        authors: SITE.author || "Detoxigram",
         images: [
             {
-                url: SITE.ogImage || "https://nextjs.org/og.png", // Must be an absolute URL
+                url: SITE.ogImage || "https://nextjs.org/og.png", 
                 width: 1200,
                 height: 630
             }
