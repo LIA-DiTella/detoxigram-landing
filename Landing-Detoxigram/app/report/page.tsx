@@ -129,7 +129,7 @@ Participants rated the toxicity of 30 messages (sourced from different Telegram 
                         <div className="flex justify-center items-center">
                           <img src="/dimensions.png" className="w-4/6 mt-5 mb-5" />
                         </div>
-                        <span className="font-bold">Detoxify Your Own Messages:</span> Detoxigram also offers a unique feature that allows users to detoxify your own messages before posting them. By running their text through our tool, they can receive suggestions on how to rephrase or adjust your message to avoid potential toxicity. This proactive approach helps users to communicate more effectively and constructively, fostering healthier interactions.<br />
+                        <span className="font-bold">Detoxify Their Own Messages:</span> Detoxigram also offers a unique feature that allows users to detoxify their own messages before posting them. By running their text through our tool, they can receive suggestions on how to rephrase or adjust their message to avoid potential toxicity. This proactive approach helps users to communicate more effectively and constructively, fostering healthier interactions.<br />
                         <div className="flex justify-center items-center">
                           <img src="/detoxify_ex.png" className="w-4/6 mt-5 mb-5" />
                         </div>
