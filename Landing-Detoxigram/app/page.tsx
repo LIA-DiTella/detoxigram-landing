@@ -118,6 +118,12 @@ export default function Home() {
                     </motion.div>
                 </div>
 
+                <motion.div initial="hidden" animate="show" variants={variants} className="col-span-6">
+                    <div className="flex flex-wrap gap-4 content-start bg-neutral-300/20 relative p-8 sm:p-12 border aspect-video md:aspect-[3/1] border-neutral-400/30 rounded-xl shadow-sm overflow-hidden">
+                        <div className="image-container absolute flex flex-row w-full h-full inset-y-0 bottom-0 items-center justify-center space-x-10 right-0 flex-1 bg-[url('/NextSteps.png')] bg-cover bg-center bg-no-repeat">
+                           </div>
+                    </div>
+                </motion.div>
                 {/* Div de Grid */}
                 <motion.div initial="hidden" animate="show" variants={variants} className="col-span-6">
                     <div className="flex flex-wrap gap-4 content-start bg-neutral-300/20 relative p-8 sm:p-12 border aspect-video md:aspect-[3/1] border-neutral-400/30 rounded-xl shadow-sm overflow-hidden">
