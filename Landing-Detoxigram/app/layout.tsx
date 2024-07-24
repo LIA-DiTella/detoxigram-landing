@@ -3,6 +3,8 @@ import "@styles/globals.scss";
 import { SITE } from "@/config";
 import { Header } from "@components/global/header";
 import { Footer } from "@components/global/footer";
+import { Analytics } from "@vercel/analytics/react"
+import Head from 'next/head';
 
 export const metadata: Metadata = {
     title: SITE.title || "Detoxigram",
@@ -54,7 +56,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="en">
+            <Head>
+        <title>Detoxigram</title>
+        <meta name="description" content="Helping users understand why content is classified as toxic" />
+      </Head>
             <body className="bg-[#F8F1E4]">
+                <Analytics />
                 <Header />
                 <main className="main grid gap-8">{children}</main>
                 <Footer />
